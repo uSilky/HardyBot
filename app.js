@@ -21,6 +21,7 @@ client.on("message", async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "anunciar") {
+      message.delete().catch(O_o=>{});
         if (message.member.hasPermission('MANAGE_GUILD')) {  
                
             let mensg = args.join(" ");
