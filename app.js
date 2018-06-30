@@ -35,7 +35,7 @@ client.on("message", async message => {
                .setDescription(mensg)
                
                .setTimestamp()
-               .setFooter(`Hardy Anuncio`, `Copyright`)
+               .setFooter(`Hardy Anuncio - Copyright`)
             
             message.channel.send("@everyone", anuncio)
     
