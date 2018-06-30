@@ -11,7 +11,7 @@ client.on("ready", () => {
 
 client.login(config.token);
 
-client.on("message", async message => {
+client.on("message", async message => { 
 
     if(message.author.bot) return;
     
@@ -35,7 +35,7 @@ client.on("message", async message => {
                .setDescription(mensg)
                
                .setTimestamp()
-               .setFooter(`Por: ${message.author.tag}`, message.author.avatarURL)
+               .setFooter(`Hardy Anuncio`, message.author.avatarURL)
             
             message.channel.send("@everyone", anuncio)
     
